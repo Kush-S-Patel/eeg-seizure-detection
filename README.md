@@ -67,7 +67,7 @@ Event sensitivity ≈ 60%  ·  ≈ 45 FA / 24h (SzCORE-style merge)
 
 **What it is not:** clinically validated seizure-interval detection, FDA-ready software, or a bedside alarm.
 
-That wording matches the dataset's own limitations section and is the framing healthcare-AI interviewers respect.
+That wording matches the dataset's own limitations section.
 
 ---
 
@@ -116,10 +116,10 @@ Documenting the null is deliberate: detection ≠ forecasting on this setup.
 
 | Lens | Verdict |
 |---|---|
-| Entry DS / ML engineer hiring | Strong — quantifiable scale, leakage hygiene, clinical metrics, honest failure analysis |
+| Applied ML / engineering portfolio | Strong — quantifiable scale, leakage hygiene, clinical metrics, honest failure analysis |
 | Clinical deployment | Not ready — weak labels; R90 precision ~7%; hundreds–thousands FA/day at high recall |
 
-See [`docs/INTERVIEW_FAQ.md`](docs/INTERVIEW_FAQ.md) for answers to “why patient splits / focal loss / PR-AUC / 10 s / ±30 s / smoothing / cache / leakage.”
+See [`docs/FAQ.md`](docs/FAQ.md) for design choices (splits, loss, metrics, windows, smoothing, cache).
 
 ---
 
@@ -134,7 +134,7 @@ jupyter notebook notebooks/
 |---|---|
 | [`01_project_walkthrough.ipynb`](notebooks/01_project_walkthrough.ipynb) | Story + splits |
 | [`02_detection_results.ipynb`](notebooks/02_detection_results.ipynb) | PR/ROC efficacy |
-| [`03_clinical_reality_check.ipynb`](notebooks/03_clinical_reality_check.ipynb) | Operating points + self-eval |
+| [`03_clinical_reality_check.ipynb`](notebooks/03_clinical_reality_check.ipynb) | Operating points and limits |
 
 Assets: [`docs/showcase/`](docs/showcase/). Regenerate figures: `python scripts/make_showcase_assets.py`.
 
@@ -157,7 +157,7 @@ To reproduce training you need BDSP credentialed access + your own cache build (
 src/seizure_detector/   # models, engine, metrics, CLI
 notebooks/              # lightweight demos
 docs/showcase/          # committed metrics + figures (no PHI/EEG)
-docs/INTERVIEW_FAQ.md   # interview answers
+docs/FAQ.md              # design FAQ
 scripts/                # ingest helpers, baselines, showcase builder
 tests/
 ```
