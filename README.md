@@ -67,8 +67,6 @@ Event sensitivity ≈ 60%  ·  ≈ 45 FA / 24h (SzCORE-style merge)
 
 **What it is not:** clinically validated seizure-interval detection, FDA-ready software, or a bedside alarm.
 
-That wording matches the dataset's own limitations section and is the framing healthcare-AI interviewers respect.
-
 ---
 
 ## Pipeline
