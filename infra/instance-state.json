@@ -1,0 +1,9 @@
+{
+  "region": "us-east-1",
+  "instanceId": "i-02f81e8ff66b28592",
+  "volumeId": "vol-08a1b754257088870",
+  "status": "terminated_and_volume_deleted",
+  "terminatedAt": "2026-07-19T06:39:00Z",
+  "archive": "s3://neurotech-fullscale-904583676897/archive/artifacts/",
+  "localCache": "data/artifacts/window_cache"
+}

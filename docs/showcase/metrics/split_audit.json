@@ -1,0 +1,38 @@
+{
+  "patient_overlap": {
+    "train_vs_val": 0,
+    "train_vs_test": 0,
+    "val_vs_test": 0
+  },
+  "prevalence": {
+    "train": {
+      "n_windows": 1970345,
+      "n_pos": 36299,
+      "prevalence": 0.018422662021118127,
+      "n_patients": 3433,
+      "n_records": 10041,
+      "marker_sum": 3410
+    },
+    "val": {
+      "n_windows": 434290,
+      "n_pos": 8325,
+      "prevalence": 0.019169218724815217,
+      "n_patients": 736,
+      "n_records": 2211,
+      "marker_sum": 792
+    },
+    "test": {
+      "n_windows": 439392,
+      "n_pos": 16478,
+      "prevalence": 0.037501820697691354,
+      "n_patients": 734,
+      "n_records": 2186,
+      "marker_sum": 1515
+    }
+  },
+  "events": {
+    "train": 2667,
+    "val": 609,
+    "test": 1121
+  }
+}

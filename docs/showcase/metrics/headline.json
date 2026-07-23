@@ -1,0 +1,43 @@
+{
+  "split_audit": {
+    "patient_overlap": {"train_val": 0, "train_test": 0, "val_test": 0},
+    "prevalence": {"train": 0.0184, "val": 0.0192, "test": 0.0375},
+    "merged_pos_events": {"train": 2667, "val": 609, "test": 1121},
+    "marker_sum": {"train": 3410, "val": 792, "test": 1515}
+  },
+  "best_single_model": "outputs/conformer_ft/best.pt",
+  "recommended_eval": "--smooth-seconds 15 --smooth-mode max",
+  "test_ft_max15": {
+    "pr_auc": 0.4598,
+    "prg_auc": 0.9876,
+    "roc_auc": 0.8594,
+    "pr_lift": 12.26,
+    "boot_pr_auc_95ci": [0.441, 0.484],
+    "precision_at_recall_50": 0.304,
+    "precision_at_recall_70": 0.146,
+    "precision_at_recall_90": 0.071,
+    "fp_per_24h_at_recall_50": 371,
+    "fp_per_24h_at_recall_90": 5449,
+    "event_sensitivity": 0.600,
+    "event_fa_per_24h": 44.5
+  },
+  "val_ft_max15": {
+    "pr_auc": 0.1961,
+    "prg_auc": 0.9822,
+    "pr_lift": 10.23,
+    "boot_pr_auc_95ci": [0.184, 0.223]
+  },
+  "interpretation": {
+    "prg_closes_val_test_gap": true,
+    "ft_vs_ft2_ci_overlap": true,
+    "equal_ensemble_beats_single": false,
+    "equal_ensemble_test_pr_auc": 0.4443,
+    "metadata_fusion_helped": false
+  },
+  "artifacts": {
+    "summary": "outputs/rigorous_eval/summary.json",
+    "equal_ensemble_test": "outputs/rigorous_eval/test_ensemble_equal_max15.json",
+    "record_stats": "data/artifacts/window_cache/record_stats.npz",
+    "prg_impl": "src/seizure_detector/prg.py"
+  }
+}

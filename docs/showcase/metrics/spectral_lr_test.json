@@ -1,0 +1,11 @@
+{
+  "model": "logistic_regression_bandpower",
+  "description": "StandardScaler + LogisticRegression(class_weight=balanced) on per-window bandpower features (5 bands \u00d7 18 channels).",
+  "train_windows": 40000,
+  "test_windows": 439392,
+  "test_prevalence": 0.037501820697691354,
+  "pr_auc": 0.08198767288203308,
+  "roc_auc": 0.6798851400220721,
+  "pr_lift": 2.186231797729232,
+  "seed": 1337
+}

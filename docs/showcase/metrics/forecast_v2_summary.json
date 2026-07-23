@@ -1,0 +1,13 @@
+{
+  "v1_test_pr_auc": 0.219,
+  "v1_test_lift": 1.17,
+  "v2_val_pr_auc": 0.09,
+  "v2_val_lift": 1.45,
+  "v2_val_chance": 0.062,
+  "v2_test_pr_auc": 0.074,
+  "v2_test_lift": 1.13,
+  "v2_test_chance": 0.065,
+  "v2_labeling": "SOP=15m SPH=3m first-onset gap>=2h interictal>=4h",
+  "detection_score_proxy_test_ap": 0.05755404873349929,
+  "patient_ap_median": 0.04041605617295266
+}

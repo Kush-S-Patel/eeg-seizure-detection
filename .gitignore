@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+.ipynb_checkpoints/
+
+data/raw/
+data/artifacts/
+data/files.txt
+data/s3-*.log
+
+# Large training artifacts — keep docs/showcase/ committed instead
+outputs/
+
+*.egg-info/
+build/
+dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
