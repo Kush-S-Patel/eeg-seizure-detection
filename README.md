@@ -15,13 +15,13 @@
 
 ## This repo vs the official dataset tooling
 
-| | This project (Kush Patel) | Dataset authors' code |
+| | This project | Dataset authors' code |
 |---|---|---|
 | Purpose | ML detection pipeline, training, evaluation, showcase | BIDS conversion, de-ID, EHR extraction |
 | GitHub | [Kush-S-Patel/eeg-seizure-detection](https://github.com/Kush-S-Patel/eeg-seizure-detection) | [`bdsp-core/Neurotech-EEG-Wrangling`](https://github.com/bdsp-core/Neurotech-EEG-Wrangling) |
 | Contains EEG data? | No (code + lightweight metrics only) | N/A (points at BDSP download) |
 
-**Dataset (cite this):** Morgan, K., Pickering, C., Goodwin, M., Wu, H., Ghanta, M., Gupta, A., Goldenholz, D., & Westover, M. B. (2026). *The Neurotech EEG Dataset* (version 1.0). Brain Data Science Platform. https://doi.org/10.60508/v99k-ek82
+**Dataset credits:** Morgan, K., Pickering, C., Goodwin, M., Wu, H., Ghanta, M., Gupta, A., Goldenholz, D., & Westover, M. B. (2026). *The Neurotech EEG Dataset* (version 1.0). Brain Data Science Platform. https://doi.org/10.60508/v99k-ek82
 
 Access is credentialed under the BDSP DUA. Official project page / DOI are on [BDSP](https://bdsp.io/); the authors note that annotations are clinical workflow annotations, not multi-expert research labels.
 
@@ -88,7 +88,7 @@ Full-scale path used rolling EC2 download → cache → delete raw EDF; cache ar
 
 ## Why forecasting failed
 
-We tried preictal forecasting (SOP/SPH windows minutes before estimated onsets). Results stayed near chance (~1.1× prevalence), and a bandpower logistic probe also failed — so this was not merely “need a bigger net.”
+I tried preictal forecasting (SOP/SPH windows minutes before estimated onsets). Results stayed near chance (~1.1× prevalence), and a bandpower logistic probe also failed — so this was not merely “need a bigger net.”
 
 Likely drivers:
 1. Scalp EEG preictal signal is weak or inconsistent across patients at multi-minute horizons  
